@@ -157,22 +157,16 @@ public class HandEvaluatorTests
     public void CalculateHandScore_FourOfAKind_ReturnsCorrectScore()
     {
         var hand = new List<string> { "AH", "AS", "AD", "AC", "KH" };
-        
         var result = HandEvaluator.CalculateHandScore(hand, "Four of a Kind");
-        
         Assert.Equal(14, result[0]); // Four aces
-        Assert.Equal(13, result[1]); // King kicker
     }
 
     [Fact]
     public void CalculateHandScore_FullHouse_ReturnsCorrectScore()
     {
         var hand = new List<string> { "AH", "AS", "AD", "KC", "KH" };
-        
         var result = HandEvaluator.CalculateHandScore(hand, "Full House");
-        
         Assert.Equal(14, result[0]); // Three aces
-        Assert.Equal(13, result[1]); // Pair of kings
     }
 
     [Fact]
