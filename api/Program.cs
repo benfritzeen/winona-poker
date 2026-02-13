@@ -10,7 +10,6 @@ builder.Services.AddControllers()
 builder.Services.AddScoped<api.Services.PokerHandService>();
 builder.Services.AddCors(options =>
 {
-    // TODO: allow any?
     options.AddDefaultPolicy(policy =>
     {
         policy.AllowAnyOrigin()
