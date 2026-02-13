@@ -12,7 +12,7 @@ import { PlayerInput } from "../../components/PlayerInput/PlayerInput";
 import { CardImages } from "../../components/CardImages/CardImages";
 import { useDealer } from "../../hooks/useDealer";
 import { GameResult } from "../../models/GameResult";
-import { t } from "../../i18n/translations";
+import { t } from "../../translation/translations";
 import styles from "./PokerPage.module.scss";
 
 const getPlayerCardClass = (gameResult: string) => {

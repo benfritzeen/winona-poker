@@ -19,7 +19,7 @@ React frontend built with Vite and TypeScript:
 - **src/components/** - Reusable UI components (CardImages, PlayerInput)
 - **src/pages/** - Page components (PokerPage)
 - **src/hooks/** - Custom hooks (useDealer)
-- **src/i18n/** - Internationalization/translations
+- **src/translation/** - Internationalization/translations
 
 **Tech Stack:** React 19, TypeScript, Vite, MUI, SCSS (CSS Modules)
 
@@ -42,10 +42,9 @@ dotnet restore
 ```bash
 cd client
 npm install
-cp .env.sample .env
 ```
 
-Update `.env` with your configuration:
+Create a `.env` file in the `/client` folder with your configuration:
 
 ```dotenv
 VITE_API_URL=http://localhost:5129

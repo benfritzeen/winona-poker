@@ -1,6 +1,6 @@
 import { useForm, useFieldArray, Controller } from "react-hook-form";
 import { TextField, Button, Stack } from "@mui/material";
-import { t } from "../../i18n/translations";
+import { t } from "../../translation/translations";
 import styles from "./PlayerInput.module.scss";
 
 interface PlayerFormData {
