@@ -1,0 +1,55 @@
+.page {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.title {
+  text-align: center;
+}
+
+.formContainer {
+  margin-bottom: 32px;
+}
+
+.error {
+  margin-bottom: 16px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.playersList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.playerCard {
+  &.winner {
+    border: 2px solid gold;
+  }
+
+  &.tie {
+    border: 2px solid silver;
+  }
+}
+
+.playerHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.handType {
+  margin-bottom: 16px;
+}
+
+.tieChip {
+  background-color: silver;
+  color: white;
+}
