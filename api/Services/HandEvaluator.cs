@@ -58,12 +58,10 @@ namespace api.Services
 
                 case FourOfAKind:
                     score.Add(CardUtilities.RankOrder[rankCounts.First(kv => kv.Value == 4).Key]);
-                    score.Add(CardUtilities.RankOrder[rankCounts.First(kv => kv.Value == 1).Key]);
                     break;
 
                 case FullHouse:
                     score.Add(CardUtilities.RankOrder[rankCounts.First(kv => kv.Value == 3).Key]);
-                    score.Add(CardUtilities.RankOrder[rankCounts.First(kv => kv.Value == 2).Key]);
                     break;
 
                 case Flush:
@@ -73,8 +71,6 @@ namespace api.Services
 
                 case ThreeOfAKind:
                     score.Add(CardUtilities.RankOrder[rankCounts.First(kv => kv.Value == 3).Key]);
-                    score.AddRange(rankCounts.Where(kv => kv.Value == 1)
-                        .Select(kv => CardUtilities.RankOrder[kv.Key]).OrderByDescending(x => x));
                     break;
 
                 case TwoPair:

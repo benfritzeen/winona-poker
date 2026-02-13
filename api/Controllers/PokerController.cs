@@ -20,6 +20,10 @@ namespace api.Controllers
         [HttpPost]
         public IActionResult DealHands([FromBody] DealRequest request)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             foreach (var playerName in request.PlayerNames)
             {
                 _pokerHandService.DealHand(playerName);
